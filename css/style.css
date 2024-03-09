@@ -1,0 +1,763 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, #2C2D65, #201F22);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.container header {
+  margin: 0px 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  font-family: "Barlow", sans-serif;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 800;
+  color: white;
+  align-items: center;
+}
+.logo span {
+  color: #E6606C;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 30px;
+}
+.menu div {
+  padding: 30px;
+  color: white;
+}
+.menu div::after {
+  content: ".";
+}
+
+.forImage1 {
+  position: absolute;
+  top: -120px;
+  right: 0px;
+}
+.forImage1 .image1 {
+  background-image: url(https://s3-alpha-sig.figma.com/img/cc1b/e9a2/6b5285619ac1312604a5100963c18d50?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oCdCCWtwaJm7cHdvGszs9l0MI~ltJwpTHm-E82pa27jT8dy3rKXqhwDAmjUwIrYzj0VjII-3pvOs3wTFCnWbPCfRQa3Nhx~AbGGqJjuL6cIF-wnslebLIkEDbVlqeMI4yT9paEEJuGaISq2jlvvKKx8z7sln~aXVVJp3p2vFStuOWhUpkkr4LxPZgif~t82cLFAWeTp8mHuRL-O2KzmmwTZ82ZSMQB2yp2JfF0dKEy4kijmuE6ctmnTQGVKvDMeZGLp27ZCToyN4EyBakVy0SYADQiUzG23rTFORj9lGigoQBVtIMrY2~FjRuWpto-z6CIUTKicdW~Ki2yn~RDlg9A__);
+  width: 600px;
+  height: 747px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 60px;
+  font-family: "Barlow", sans-serif;
+  padding: 10px 0px;
+}
+.title .item1 {
+  font-weight: 300;
+  font-size: 64px;
+  text-transform: uppercase;
+  color: white;
+}
+.title .item2 {
+  color: #E8AB36;
+  text-transform: uppercase;
+  font-size: 32px;
+}
+.title .item3 {
+  width: 30%;
+  color: white;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+}
+.title .item4 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.title .item4 div {
+  padding: 10px 30px;
+  color: white;
+  background-color: #E6606C;
+  border-radius: 25px;
+}
+.title .item4 .button2 {
+  margin-left: 30px;
+  color: black;
+  background-color: white;
+}
+
+.forImage2 {
+  position: absolute;
+  top: 240px;
+  left: 1%;
+}
+.forImage2 .image2 {
+  background-image: url(https://s3-alpha-sig.figma.com/img/5e62/9250/ae47f7c8069b4507928c9be64373f068?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WMQNflLmBPC1TKyTcwRkaI6xpUxBNmXGmHo4LMAIMnwpTqFzEZHzyJaN2hgenAd1ko-sRn0ojkf74pFZKYdOVx9JjHejjUbdGOGuU90t8zlIzRgbWMHbMzO0aXxrtaTwTFj76KdYbPXtXawzzGI4NeItDNyqp4AzoygkIzJ5lQ3j~YMWm9G~ss3InytoDkSSCnTuLfPu90sGigsFp7zbBuK5fmzRZwK-j03NY41z4ePinKk3Y7WdPRaIH3WxO7THIaDqRSGUzjr~xHdmtaR5NtEXXixpqxtFBQwGODa6-THaN3r3v5KjcCeQx5FZCJOk0Ebspbr3q8zQOEFZs5hlEA__);
+  width: 142px;
+  height: 153px;
+}
+
+.forImage3 {
+  position: absolute;
+  top: 470px;
+  left: 30%;
+}
+.forImage3 .image3 {
+  background-image: url(https://s3-alpha-sig.figma.com/img/7646/5e06/9622537eb9e87abe582f1b783526ca32?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bfSxDfxcF~epIN2XpeZOTTOtt2TcHtShq2bsbTyP29rk99Ez3PKSNg75trYkUJMKPDnpjpfzBso2MjGGm59NSRfYjPbNLGREfPhhXEl1h~drZ9JnELrQNhijPrEgl9GR1TVYZyEwv4ZMgKaYxtgC4tw1aZ-tTlIWyNEIR8BH3NzZHd1KSuSIXyQgO0hxdFObpXNIlspoFAc6mxQQ~u9Rbxjd7YySH0D2455-T6FlqtHoNaNL4eXjzZ2VIEl2sspdRb509LxnmgMQKX3jHIKL7SPrnWKabwpPRBZ7vE2DK7ys3fWt-7fAoNjNVaRA7Mz0g-2f3a9-oeYqT-kLbmDLYA__);
+  width: 142px;
+  height: 153px;
+}
+
+.forImage4 {
+  position: absolute;
+  top: 1450px;
+  left: 30%;
+}
+.forImage4 .image4 {
+  background-image: url(https://s3-alpha-sig.figma.com/img/5e62/9250/ae47f7c8069b4507928c9be64373f068?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WMQNflLmBPC1TKyTcwRkaI6xpUxBNmXGmHo4LMAIMnwpTqFzEZHzyJaN2hgenAd1ko-sRn0ojkf74pFZKYdOVx9JjHejjUbdGOGuU90t8zlIzRgbWMHbMzO0aXxrtaTwTFj76KdYbPXtXawzzGI4NeItDNyqp4AzoygkIzJ5lQ3j~YMWm9G~ss3InytoDkSSCnTuLfPu90sGigsFp7zbBuK5fmzRZwK-j03NY41z4ePinKk3Y7WdPRaIH3WxO7THIaDqRSGUzjr~xHdmtaR5NtEXXixpqxtFBQwGODa6-THaN3r3v5KjcCeQx5FZCJOk0Ebspbr3q8zQOEFZs5hlEA__);
+  width: 142px;
+  height: 153px;
+}
+
+.forImage5 {
+  position: absolute;
+  width: 210px;
+  height: 210px;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  position: absolute;
+  top: 800px;
+  left: 75%;
+}
+
+.flexForGrid {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+}
+
+.grid {
+  margin: 200px 0px;
+  display: grid;
+  height: 570px;
+  width: 80%;
+  grid-template-columns: [col] 50% [col] 50%;
+  grid-template-rows: [row] 25% [row] 25% [row] 25% [row] 25%;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
+}
+.grid .i1 {
+  grid-column: col 1/col 2;
+  grid-row: row 1/row 5;
+}
+.grid .i1 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.grid .i2 {
+  display: flex;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 56px;
+  line-height: 64px;
+  color: white;
+  width: 65%;
+}
+.grid .i3 {
+  display: flex;
+  width: 80%;
+  margin-top: 20px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: white;
+}
+.grid .i4 {
+  display: flex;
+  width: 80%;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: white;
+  opacity: 50.3%;
+}
+.grid .i5 {
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+.grid .i5 div {
+  display: flex;
+  width: 152px;
+  height: 43px;
+  align-items: center;
+  justify-content: center;
+  background-color: #E6606C;
+  border-radius: 25px;
+  color: white;
+}
+
+.ipsum {
+  display: flex;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: white;
+  opacity: 50.3%;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.ipsum1 {
+  margin-top: 30px;
+  display: flex;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 56px;
+  line-height: 64px;
+  color: white;
+  justify-content: center;
+}
+
+.forIpsum2 {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.forIpsum2 .ipsum2 {
+  display: flex;
+  width: 40%;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: white;
+  opacity: 50.3%;
+  justify-content: center;
+  text-align: center;
+}
+
+.grid2 {
+  display: grid;
+  width: 80%;
+  height: 432px;
+  margin: 5% auto;
+  grid-template-columns: [col] 1fr [col] 1fr [col] 1fr;
+  grid-template-rows: [row] 50% [row] 35% [row] 15%;
+  -moz-column-gap: 2%;
+       column-gap: 2%;
+}
+.grid2 .card1 {
+  grid-column: col 1/col 2;
+  grid-row: row 1/row 2;
+}
+.grid2 .card1 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.grid2 .card1Text {
+  display: flex;
+  grid-column: col 1/col 2;
+  padding: 30px 25px;
+  grid-row: row 2/row 3;
+  color: white;
+  background: linear-gradient(to left, #4D4F95, #2B2D66);
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+}
+.grid2 .card1Date {
+  grid-column: col 1/col 2;
+  grid-row: row 3/row 4;
+  background: linear-gradient(to left, #4D4F95, #2B2D66);
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  size: 16px;
+  color: white;
+  padding: 0px 25px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.grid2 .card1Date span {
+  opacity: 50.3%;
+}
+.grid2 .card2 {
+  grid-column: col 2/col 3;
+  grid-row: row 1/row 2;
+}
+.grid2 .card2 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.grid2 .card2Text {
+  display: flex;
+  grid-column: col 2/col 3;
+  padding: 30px 25px;
+  grid-row: row 2/row 3;
+  color: white;
+  background: linear-gradient(to left, #4D4F95, #2B2D66);
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+}
+.grid2 .card2Date {
+  grid-column: col 2/col 3;
+  grid-row: row 3/row 4;
+  background: linear-gradient(to left, #4D4F95, #2B2D66);
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  size: 16px;
+  color: white;
+  padding: 0px 25px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.grid2 .card2Date span {
+  opacity: 50.3%;
+}
+.grid2 .card3 {
+  grid-column: col 3/col 4;
+  grid-row: row 1/row 2;
+}
+.grid2 .card3 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.grid2 .card3Text {
+  display: flex;
+  grid-column: col 3/col 4;
+  padding: 30px 25px;
+  grid-row: row 2/row 3;
+  color: white;
+  background: linear-gradient(to left, #4D4F95, #2B2D66);
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+}
+.grid2 .card3Date {
+  grid-column: col 3/col 4;
+  grid-row: row 3/row 4;
+  background: linear-gradient(to left, #4D4F95, #2B2D66);
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  size: 16px;
+  color: white;
+  padding: 0px 25px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.grid2 .card3Date span {
+  opacity: 50.3%;
+}
+
+footer {
+  margin: 60px auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 60px;
+}
+footer .menuFooter {
+  font-family: "Barlow", sans-serif;
+  color: white;
+  opacity: 50.3%;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 5px;
+  text-transform: uppercase;
+}
+footer p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  padding: 5px;
+}
+footer .logo {
+  align-items: flex-start;
+}
+footer .information, footer .informationService {
+  margin-top: 20px;
+}
+footer i {
+  margin: 3px;
+  padding: 24px;
+  border-radius: 50%;
+  color: white;
+  background-color: #6357F6;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  width: 80%;
+}
+section .line {
+  border-bottom: 1px solid white;
+  opacity: 50.3%;
+}
+section .terms {
+  margin-top: 30px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  opacity: 50.3%;
+}
+section .bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 0% 0% 5% 0%;
+}
+section .boxForLawyers {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+}
+section .boxForLawyers div {
+  margin: 0px 30px;
+  padding: 0px 10px;
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+.flex {
+  display: none;
+}
+
+.menuBars {
+  display: none;
+}
+
+.flexIpsum {
+  display: none;
+}
+
+.flexCards {
+  display: none;
+}
+
+@media screen and (max-width: 930px) {
+  .menu {
+    display: none;
+  }
+  .menuBars {
+    display: block;
+  }
+  .grid {
+    display: none;
+  }
+  .grid2 {
+    display: none;
+  }
+  .ipsum {
+    display: none;
+  }
+  .ipsum1 {
+    display: none;
+  }
+  .forIpsum2 {
+    display: none;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+  }
+  .container header {
+    padding: 0% 0%;
+    margin: 0px 2%;
+  }
+  .container .menuBars {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  .container .title {
+    display: flex;
+    flex-direction: column;
+    margin: 60px 10px;
+    font-family: "Barlow", sans-serif;
+    padding: 10px 0px;
+  }
+  .container .title .item3 {
+    width: 90%;
+    color: white;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+  }
+  .container .title .item2 {
+    color: #E8AB36;
+    text-transform: uppercase;
+    font-size: 32px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .flex .flexForImage {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .flex .flexForImage img {
+    width: 100%;
+    height: 80%;
+  }
+  .flex .flexForLorem {
+    display: flex;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: white;
+    opacity: 50.3%;
+    justify-content: left;
+    text-transform: uppercase;
+  }
+  .flex .flexForText {
+    display: flex;
+    justify-content: justify;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 56px;
+    line-height: 64px;
+    color: white;
+    width: 100%;
+  }
+  .flex .flexForText1 {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: white;
+    justify-content: justify;
+  }
+  .flex .flexForText2 {
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: white;
+    opacity: 50.3%;
+  }
+  .flex .button4 {
+    display: flex;
+    width: 152px;
+    height: 43px;
+    align-items: center;
+    justify-content: center;
+    background-color: #E6606C;
+    border-radius: 25px;
+    color: white;
+    margin: 30px;
+  }
+  .flexIpsum {
+    display: flex;
+    flex-direction: column;
+  }
+  .ips {
+    display: flex;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: white;
+    opacity: 50.3%;
+    justify-content: left;
+    text-transform: uppercase;
+  }
+  .ips1 {
+    margin-top: 15px;
+    display: flex;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 56px;
+    line-height: 64px;
+    color: white;
+    justify-content: left;
+  }
+  .ips2 {
+    margin-top: 15px;
+    display: flex;
+    width: 100%;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: white;
+    opacity: 50.3%;
+    justify-content: center;
+  }
+  .flexCards {
+    display: flex;
+    flex-direction: column;
+  }
+  .flexCards .flexCard1 {
+    margin-top: 20px;
+  }
+  .flexCards .flexCard1 img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+  .flexCards .flexCard1 .flexCard1Text {
+    display: flex;
+    padding: 30px 25px;
+    color: white;
+    background: linear-gradient(to left, #4D4F95, #2B2D66);
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .flexCards .flexCard1 .flexCard1Date {
+    background: linear-gradient(to left, #4D4F95, #2B2D66);
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    size: 16px;
+    color: white;
+    padding: 25px 25px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    opacity: 50.3%;
+  }
+  .flexCards .flexCard2 {
+    margin-top: 20px;
+  }
+  .flexCards .flexCard2 img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+  .flexCards .flexCard2 .flexCard2Text {
+    display: flex;
+    padding: 30px 25px;
+    color: white;
+    background: linear-gradient(to left, #4D4F95, #2B2D66);
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .flexCards .flexCard2 .flexCard2Date {
+    background: linear-gradient(to left, #4D4F95, #2B2D66);
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    size: 16px;
+    color: white;
+    padding: 25px 25px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    opacity: 50.3%;
+  }
+  .flexCards .flexCard3 {
+    margin-top: 20px;
+  }
+  .flexCards .flexCard3 img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+  .flexCards .flexCard3 .flexCard3Text {
+    display: flex;
+    padding: 30px 25px;
+    color: white;
+    background: linear-gradient(to left, #4D4F95, #2B2D66);
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .flexCards .flexCard3 .flexCard3Date {
+    background: linear-gradient(to left, #4D4F95, #2B2D66);
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    size: 16px;
+    color: white;
+    padding: 25px 25px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    opacity: 50.3%;
+  }
+  footer {
+    width: 100%;
+  }
+  .forImage1 .image1 {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .forImage2 {
+    top: 900px;
+  }
+  .forImage3 {
+    top: 1250px;
+    right: 60%;
+  }
+  .forImage4 {
+    top: 1500px;
+    left: 0px;
+  }
+  .forImage5 {
+    top: 1700px;
+    left: 0px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .grid .i2 {
+    display: flex;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 50px;
+    line-height: 43px;
+    color: white;
+    width: 65%;
+  }
+}/*# sourceMappingURL=style.css.map */
